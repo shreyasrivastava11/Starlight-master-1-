@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* **************************************************** */
+/* header Section Classes */
+
+.main-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #5476ee;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7%;
+  width: 100%;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.nav-img {
+  width: 6%;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.center-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 0px;
+}
+
+.center-nav a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.page-h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 350px;
+  /* font-weight: 100; */
+  /* letter-spacing: 50px; */
+}
+
+.page-img {
+  position: absolute;
+  /* margin-top: 50px; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+/* **************************************************** */
+/* Page 1 Classes */
+
+.page-1 {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 20px; */
+  height: 100vh;
+  width: 100vw;
+  background-color: #5476ee;
+  text-align: center;
+  /* margin: -3.5px -12px; */
+}
+
+.page-1 h6 {
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.page-1 h6::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  width: 24px;
+  height: 7px;
+  background-color: white;
+  transform: skewY(-16deg);
+}
+
+.page-1 h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 50px;
+  line-height: 1;
+}
+
+.page-1 h4 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 30px;
+  /* letter-spacing: 2px; */
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ******************************************************** */
+/* Page 2 Classes */
+
+.page-2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #5476ee;
+}
+
+.page-2-img1 {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: -20%;
+  top: 20%;
+}
+
+.page-2-img1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.page-2-img2 {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  right: -20%;
+  top: -10%;
+}
+
+.page-2-img2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.page-2 h4 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.page-2 h4::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 40%;
+  width: 24px;
+  height: 7px;
+  background-color: white;
+  transform: skewY(-16deg);
+}
+
+.page-2 h2 {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* ***************************************************** */
+/* Page 3 Classes */
+
+.page-3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(241deg 85% 97%) 19%,
+    hsl(240deg 84% 93%) 32%,
+    hsl(239deg 83% 90%) 40%,
+    hsl(238deg 83% 86%) 46%,
+    hsl(236deg 82% 82%) 52%,
+    hsl(235deg 82% 78%) 60%,
+    hsl(233deg 82% 74%) 70%,
+    hsl(230deg 82% 69%) 84%,
+    hsl(227deg 82% 63%) 100%
+  );
+}
+
+.hand {
+  position: absolute;
+  left: 40%;
+  /* transform: translateX(-50%); */
+  width: 20%;
+  top: 10%;
+  transition: transform 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(45rem);
+}
+/* .hand-not-active {
+  display: none;
+} */
+
+.page-3-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  top: 50%;
+}
